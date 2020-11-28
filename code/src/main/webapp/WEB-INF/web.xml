@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>Watch-Store</display-name>
+
+    <servlet>
+        <servlet-name>productList</servlet-name>
+        <servlet-class>store.web.ProductListPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>productList</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>productDetails</servlet-name>
+        <servlet-class>store.web.ProductDetailsPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>productDetails</servlet-name>
+        <url-pattern>/products/*</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>cart</servlet-name>
+        <servlet-class>store.web.CartPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cart</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>cartItemDelete</servlet-name>
+        <servlet-class>store.web.CartItemDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cartItemDelete</servlet-name>
+        <url-pattern>/cart/deleteItem/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>checkoutPage</servlet-name>
+        <servlet-class>store.web.CheckoutPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>checkoutPage</servlet-name>
+        <url-pattern>/checkout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>orderOverviewPage</servlet-name>
+        <servlet-class>store.web.OrderOverviewPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>orderOverviewPage</servlet-name>
+        <url-pattern>/checkout/orderOverview/*</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
