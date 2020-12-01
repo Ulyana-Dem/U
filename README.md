@@ -1,7 +1,7 @@
 # WatchShop
 TRTPO project
 
-WatchShop is a web application for buying watches.<br>
+U is a web application for buying watches.<br>
 Application uses Java 8, Servlet API, JSP API.
 
 ## Contents
